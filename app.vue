@@ -1,10 +1,7 @@
 <template>
   <div>
-    {{ api }}
-    <NuxtWelcome />
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
   </div>
 </template>
-
-<script setup>
-  const { data: api } = await useFetch('/api/hello')
-</script>
